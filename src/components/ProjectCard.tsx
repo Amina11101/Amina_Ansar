@@ -15,6 +15,15 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const getImageUrl = (src: string) => {
+    // If it's an external URL, return as-is
+    if (src.startsWith('http')) {
+      return src
+    }
+    // For local images, prepend BASE_URL
+    return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`
+  }
+
   return (
     <motion.div
       className="project-card"
@@ -23,7 +32,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     >
       <div className="project-image-container">
         <img
-          src={project.image}
+          src={getImageUrl(project.image)}
           alt={project.title}
           className="project-image"
         />
