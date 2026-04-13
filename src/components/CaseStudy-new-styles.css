@@ -1,0 +1,506 @@
+/* Wireframes & Iterations Section */
+.wireframes-section {
+  margin-bottom: 4rem;
+}
+
+.wireframes-section .section-number {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-pink);
+  margin-bottom: 0.75rem;
+}
+
+.wireframes-section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wireframes-section h2::before {
+  content: '';
+  width: 4px;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-pink), rgba(232, 93, 117, 0.3));
+  border-radius: 2px;
+}
+
+.section-intro {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.iteration-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.iteration-step {
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-pink);
+}
+
+.iteration-step h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.iteration-step p {
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Design System Section */
+.design-system-section {
+  margin-bottom: 4rem;
+}
+
+.design-system-section .section-number {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-pink);
+  margin-bottom: 0.75rem;
+}
+
+.design-system-section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.design-system-section h2::before {
+  content: '';
+  width: 4px;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-pink), rgba(232, 93, 117, 0.3));
+  border-radius: 2px;
+}
+
+.design-system-subsection {
+  margin-bottom: 3rem;
+}
+
+.design-system-subsection h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Color Grid */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.color-card {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--divider);
+}
+
+.color-card:hover {
+  border-color: var(--primary-pink);
+  box-shadow: 0 4px 12px rgba(232, 93, 117, 0.1);
+  transform: translateY(-2px);
+}
+
+.color-swatch {
+  width: 100%;
+  height: 100px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.color-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.color-code {
+  font-size: 0.9rem;
+  color: var(--primary-pink);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  font-family: monospace;
+}
+
+.color-usage {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* Typography */
+.typography-guide {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.typography-item {
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-pink);
+}
+
+.typography-item h4 {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.typography-item p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Accessibility Checklist */
+.accessibility-checklist {
+  display: grid;
+  gap: 1rem;
+}
+
+.check-item {
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  border-left: 4px solid var(--primary-pink);
+}
+
+/* Final Designs Section */
+.final-designs-section {
+  margin-bottom: 4rem;
+}
+
+.final-designs-section .section-number {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-pink);
+  margin-bottom: 0.75rem;
+}
+
+.final-designs-section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.final-designs-section h2::before {
+  content: '';
+  width: 4px;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-pink), rgba(232, 93, 117, 0.3));
+  border-radius: 2px;
+}
+
+/* Usability Testing Section */
+.usability-testing-section {
+  margin-bottom: 4rem;
+}
+
+.usability-testing-section .section-number {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-pink);
+  margin-bottom: 0.75rem;
+}
+
+.usability-testing-section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usability-testing-section h2::before {
+  content: '';
+  width: 4px;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-pink), rgba(232, 93, 117, 0.3));
+  border-radius: 2px;
+}
+
+.test-scenarios {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.test-scenario {
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--divider);
+  transition: all 0.3s ease;
+}
+
+.test-scenario:hover {
+  border-color: var(--primary-pink);
+  box-shadow: 0 6px 16px rgba(232, 93, 117, 0.1);
+}
+
+.test-scenario h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.scenario-desc {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--bg);
+  border-left: 3px solid var(--primary-pink);
+  border-radius: 4px;
+}
+
+.test-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg);
+  border-radius: 6px;
+  border: 1px solid var(--divider);
+}
+
+.metric-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-pink);
+  margin-bottom: 0.5rem;
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.test-insight {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  padding: 1rem;
+  background: rgba(232, 93, 117, 0.05);
+  border-left: 3px solid var(--primary-pink);
+  border-radius: 4px;
+}
+
+.test-summary {
+  padding: 2rem;
+  background: var(--bg);
+  border-radius: 8px;
+  border: 2px solid var(--divider);
+}
+
+.test-summary h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.test-summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.test-summary li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+}
+
+.test-summary li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-pink);
+  font-weight: 700;
+}
+
+/* Impact & Learnings Combined Section */
+.impact-learnings-section {
+  margin-bottom: 4rem;
+}
+
+.impact-learnings-section .section-number {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-pink);
+  margin-bottom: 0.75rem;
+}
+
+.impact-learnings-section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  color: var(--text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.impact-learnings-section h2::before {
+  content: '';
+  width: 4px;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-pink), rgba(232, 93, 117, 0.3));
+  border-radius: 2px;
+}
+
+.impact-subsection {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--divider);
+}
+
+.impact-subsection h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.learnings-subsection h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Solution Section with number */
+.solution-section::before {
+  content: '06 — SOLUTION';
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary-pink);
+  margin-bottom: 0.75rem;
+}
+
+.solution-section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.solution-section h2::before {
+  content: '';
+  width: 4px;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-pink), rgba(232, 93, 117, 0.3));
+  border-radius: 2px;
+}
+
+/* Responsive Design System */
+@media (max-width: 1024px) {
+  .color-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .iteration-content {
+    grid-template-columns: 1fr;
+  }
+
+  .test-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .color-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .test-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .iteration-step {
+    padding: 1.5rem;
+  }
+
+  .test-scenario {
+    padding: 1.5rem;
+  }
+
+  .test-summary {
+    padding: 1.5rem;
+  }
+}

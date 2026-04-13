@@ -1,0 +1,58 @@
+/* Flower Decorations Background */
+.flower-decoration {
+  position: absolute;
+  pointer-events: auto;
+  z-index: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  animation: floatGently 6s ease-in-out infinite;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.flower-decoration:hover {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) brightness(1.1);
+}
+
+.flower-decoration.spinning {
+  animation: floatGently 6s ease-in-out infinite, spinFlower 1s linear infinite;
+}
+
+.flower-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+/* Gentle floating animation */
+@keyframes floatGently {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Spinning animation */
+@keyframes spinFlower {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(360deg) translateY(0px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flower-decoration {
+    opacity: 0.2 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .flower-decoration {
+    display: none;
+  }
+}

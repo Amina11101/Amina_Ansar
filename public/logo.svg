@@ -1,0 +1,44 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- AA Logo Design -->
+  <defs>
+    <style>
+      .logo-text { font-family: cursive; font-size: 60px; fill: #000; }
+      .logo-triangle { fill: none; stroke: #00A878; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .logo-fill { fill: #00A878; }
+    </style>
+  </defs>
+  
+  <!-- First A - Large -->
+  <g transform="translate(80, 20)">
+    <!-- Triangle outline -->
+    <polygon class="logo-triangle" points="80,0 200,250 0,250"/>
+    <!-- Middle line -->
+    <line class="logo-triangle" x1="40" y1="130" x2="160" y2="130"/>
+    <!-- Fill triangle on right -->
+    <polygon class="logo-fill" points="120,0 200,250 100,250"/>
+  </g>
+  
+  <!-- Second A - Small -->
+  <g transform="translate(480, 120)">
+    <!-- Triangle outline -->
+    <polygon class="logo-triangle" points="50,0 130,150 0,150"/>
+    <!-- Middle line -->
+    <line class="logo-triangle" x1="25" y1="75" x2="105" y2="75"/>
+    <!-- Fill triangle on right -->
+    <polygon class="logo-fill" points="75,0 130,150 60,150"/>
+  </g>
+  
+  <!-- Amina Ansaar Text -->
+  <text x="200" y="340" class="logo-text">Amina Ansaar</text>
+  
+  <!-- Decorative shapes below -->
+  <g transform="translate(200, 420)">
+    <!-- Wave/curve shape left -->
+    <path d="M 50 80 Q 50 20 120 20 Q 120 80 50 80" class="logo-fill"/>
+  </g>
+  
+  <g transform="translate(520, 420)">
+    <!-- Wave/curve shape right -->
+    <path d="M 0 80 Q 0 20 70 20 Q 70 80 0 80" class="logo-fill"/>
+  </g>
+</svg>

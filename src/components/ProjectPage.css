@@ -1,0 +1,147 @@
+/* Project Page */
+.project-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+}
+
+.project-page-header {
+  padding: 2rem;
+  border-bottom: 1px solid var(--divider);
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+}
+
+.back-button:hover {
+  background: var(--bg-secondary);
+  border-color: var(--primary-pink);
+  color: var(--primary-pink);
+}
+
+.project-page-container {
+  flex: 1;
+  padding: 4rem 1.5rem;
+}
+
+.project-page-container .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-cta {
+  margin-top: 6rem;
+  padding: 3rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.project-cta h3 {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin: 0;
+}
+
+.project-cta p {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--primary-pink);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0px 10px 25px rgba(0, 168, 120, 0.2);
+}
+
+.cta-button:hover {
+  background: var(--primary-pink-light);
+  transform: translateY(-2px);
+  box-shadow: 0px 15px 35px rgba(0, 168, 120, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-page-header {
+    margin-top: 70px;
+    padding: 1.5rem;
+  }
+
+  .project-page-container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .back-button {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .project-cta {
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  .project-cta h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-page-header {
+    padding: 1rem;
+  }
+
+  .project-page-container {
+    padding: 2rem 1rem;
+  }
+
+  .project-cta {
+    padding: 1.5rem;
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+
+  .project-cta h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-cta p {
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    padding: 0.75rem 2rem;
+    font-size: 0.95rem;
+    width: 100%;
+    text-align: center;
+  }
+}

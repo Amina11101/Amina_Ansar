@@ -1,0 +1,108 @@
+/* Toggle View Component */
+.toggle-view {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.toggle-container {
+  display: flex;
+  gap: 0.6rem;
+  background: var(--bg);
+  padding: 0.5rem;
+  border-radius: 28px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.2rem;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.toggle-button:hover {
+  background: rgba(0, 168, 120, 0.08);
+  color: var(--text);
+}
+
+.toggle-button.active {
+  background: var(--primary-pink);
+  color: white;
+  box-shadow: 0px 2px 8px rgba(0, 168, 120, 0.2);
+}
+
+.toggle-icon {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.toggle-hint {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .toggle-view {
+    padding: 1.5rem;
+  }
+
+  .toggle-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .toggle-button {
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-view {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .toggle-container {
+    gap: 0.5rem;
+  }
+
+  .toggle-button {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.85rem;
+    flex: 1;
+  }
+
+  .toggle-icon {
+    display: none;
+  }
+
+  .toggle-hint {
+    font-size: 0.8rem;
+  }
+}
