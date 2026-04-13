@@ -94,15 +94,6 @@ export default function ProjectPage() {
   const navigate = useNavigate()
   const [isRecruiterMode, setIsRecruiterMode] = useState(true)
 
-  const getImageUrl = (src: string) => {
-    // If it's an external URL, return as-is
-    if (src.startsWith('http')) {
-      return src
-    }
-    // For local images, prepend BASE_URL
-    return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`
-  }
-
   const project = projectsData[projectId || '1']
 
   if (!project) {
