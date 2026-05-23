@@ -100,7 +100,7 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
               </div>
               <div className="overview-card">
                 <span className="overview-label">Timeline</span>
-                <p className="overview-value">12 weeks</p>
+                <p className="overview-value">8 weeks</p>
               </div>
             </div>
             <p className="overview-description" style={{marginTop: '1rem'}}>AI-powered debugging platform for multi-agent systems. Created a visual "air traffic control" interface enabling teams to monitor agent collaboration, debug handoff failures in real-time, and maintain human oversight at scale.</p>
@@ -115,7 +115,7 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
             <div className="problem-impact">
               <p><strong>What was wrong:</strong> Organizations deploying multi-agent AI systems had zero visibility into how agents collaborate. Teams operated "in complete darkness"—unable to see data flows, understand agent decisions, or debug failures when agent-to-agent handoffs broke.</p>
               <p><strong>Who was affected:</strong> Operations teams and AI product leads at companies with 50+ AI agents in production. For every 1 production agent, teams spent 30-60 minutes debugging log files manually instead of focusing on optimization.</p>
-              <p><strong>Why it mattered:</strong> 88% of organizations embed AI agents, but only 11% have them in production. The lack of visual debugging tools created a critical bottleneck: teams couldn't confidently scale multi-agent systems, couldn't explain failures to stakeholders, and couldn't maintain the human oversight needed for risky decisions. This directly prevented enterprise adoption of agentic AI.</p>
+              <p><strong>Why it mattered:</strong> 88% of organizations embed AI agents, but only 11% have them in production. The lack of visual debugging tools created a critical bottleneck.</p>
             </div>
           </motion.section>
 
@@ -126,8 +126,8 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
             <div className="section-content">
               <p><strong>UX Research:</strong> I conducted 12 in-depth interviews with operations managers and AI product leads, shadowed 4 teams debugging production failures in real-time, and analyzed their pain points with existing tools.</p>
               <p><strong>UX Strategy:</strong> I synthesized research into 4 core user insights and defined the information architecture around temporal navigation and spatial mental models—concepts unfamiliar to existing debugging tools.</p>
-              <p><strong>UI Design:</strong> I designed 5 core features (Agent Topology Map, Handoff Inspector, Timeline Scrubber, Human Checkpoints, Trust Calibration) using minimalist principles inspired by developer tools, with emphasis on glanceability and progressive disclosure.</p>
-              <p><strong>Prototyping & Testing:</strong> I built high-fidelity interactive prototypes in Figma and Principle, conducted iterative usability testing with 8 organizations, and refined interactions based on feedback. Solo design ownership from concept through production-ready prototype.</p>
+              <p><strong>UI Design:</strong> I designed features using minimalist principles inspired by developer tools, with emphasis on glanceability and progressive disclosure.</p>
+              <p><strong>Prototyping & Testing:</strong> I built high-fidelity interactive prototypes in Figma using Google Stich, conducted iterative usability testing, and refined interactions based on feedback. Solo design ownership from concept through production-ready prototype.</p>
             </div>
           </motion.section>
 
@@ -135,12 +135,25 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
           <motion.section variants={itemVariants} className="case-section research-section">
             <span className="section-number">04 — RESEARCH & INSIGHTS</span>
             <h2>Deep Research & Key Findings</h2>
-            <div className="section-content">
-              <p><strong>Research Methods:</strong> 12 in-depth interviews, 4 on-site job shadowing sessions, competitive analysis of Langchain/Datadog/New Relic, and literature review of multi-agent coordination academic research.</p>
-              <p><strong>Critical Insight #1 — Mental Model Mismatch:</strong> Teams think in workflows and data transformations, but existing tools force log-based, text-heavy debugging. Users struggled to reconstruct agent behavior from unordered log entries.</p>
-              <p><strong>Critical Insight #2 — "Ghost in the Machine":</strong> Teams couldn't understand WHY agents made specific decisions. 78% of debugging sessions involved guessing which agent caused the failure by reading decision rationales.</p>
-              <p><strong>Critical Insight #3 — Time-Driven Failures:</strong> 80% of production failures occurred during agent-to-agent handoffs. Teams needed temporal navigation—the ability to "pause" a workflow and inspect state at exact moments.</p>
-              <p><strong>Critical Insight #4 — Trust Calibration is Personal:</strong> Teams don't use universal confidence thresholds. Instead, they vary thresholds per workflow (stricter for financial decisions, looser for recommendations).</p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'start' }}>
+              <div className="section-content">
+                <p><strong>Research Methods:</strong> 12 in-depth interviews, 4 on-site job shadowing sessions, competitive analysis of Langchain/Datadog/New Relic, and literature review of multi-agent coordination academic research.</p>
+                <p><strong>Critical Insight #1 — Mental Model Mismatch:</strong> Teams think in workflows and data transformations, but existing tools force log-based, text-heavy debugging. Users struggled to reconstruct agent behavior from unordered log entries.</p>
+                <p><strong>Critical Insight #2 — "Ghost in the Machine":</strong> Teams couldn't understand WHY agents made specific decisions. 78% of debugging sessions involved guessing which agent caused the failure by reading decision rationales.</p>
+                <p><strong>Critical Insight #3 — Time-Driven Failures:</strong> 80% of production failures occurred during agent-to-agent handoffs. Teams needed temporal navigation—the ability to "pause" a workflow and inspect state at exact moments.</p>
+                <p><strong>Critical Insight #4 — Trust Calibration is Personal:</strong> Teams don't use universal confidence thresholds. Instead, they vary thresholds per workflow (stricter for financial decisions, looser for recommendations).</p>
+              </div>
+              <div className="photo-section" style={{ 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                backgroundColor: 'rgba(9, 7, 7, 0.09)',
+                border: '1px solid rgba(182, 182, 182, 0.6)',
+                borderRadius: '8px',
+                padding: '1.5rem'
+              }}>
+                <img src={`${import.meta.env.BASE_URL}agentflow/research.png`} alt="Research Insights" className="case-hero-image" style={{ width: '100%', height: 'auto' }} />
+              </div>
             </div>
           </motion.section>
 
@@ -148,22 +161,22 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
           <motion.section variants={itemVariants} className="case-section research-section">
             <span className="section-number">05 — IDEATION & PROCESS</span>
             <h2>Design Process: From Sketches to System</h2>
-            <div className="section-content">
-              <p><strong>Design Principles:</strong> Transparency over opacity, glanceability first with progressive disclosure, control without cognitive load, time as first-class dimension.</p>
-              <p><strong>Sketches & Wireframes:</strong> Started with 20+ rapid sketches exploring mental model options: timeline-based, graph-based, and hybrid approaches. Tested spatial layouts vs. text-heavy interfaces. Early prototypes showed that teams preferred directed graphs (like Git commit graphs) for understanding agent relationships.</p>
-              <p><strong>User Flows & Iteration:</strong> Built three major iterations addressing: (1) Visual stability—dynamic graphs caused cognitive load; solution: fixed positions with animation. (2) JSON data representation—raw JSON overwhelming; solution: smart previews with expandable details. (3) Large dataset performance—10,000+ events caused lag; solution: virtualized timeline with sampling. (4) Approval workflow friction—modal approvals too slow; solution: in-place conditional logic.</p>
-              <p><strong>Key Design Decision:</strong> Adopted Timeline Scrubber as central metaphor (like video scrubbing). This single interaction model unified debugging, analysis, and forecasting—users could "rewind" workflows and inspect any moment in time. This replaced 15+ separate debugging screens in initial concepts.</p>
-            </div>
-            <div style={{
-              backgroundColor: 'var(--card-bg, rgba(255, 255, 255, 0.05))',
-              border: '1px solid var(--border-color, rgba(255, 255, 255, 0.1))',
-              borderRadius: '8px',
-              padding: '2rem',
-              marginTop: '1.5rem'
-            }}>
-              <h3 style={{marginTop: 0, marginBottom: '1rem'}}>Low Fidelity Prototypes</h3>
-              <div className="photo-section">
-                <img src={`${import.meta.env.BASE_URL}agentflow/Low fi proto.png`} alt="Low Fidelity Prototypes" className="case-hero-image" style={{maxWidth: '60%', margin: '0 auto', display: 'block'}} />
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'start' }}>
+              <div className="photo-section" style={{ 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                borderRadius: '8px',
+                padding: '1.5rem'
+              }}>
+                <img src={`${import.meta.env.BASE_URL}agentflow/Low fi proto.png`} alt="Low Fidelity Prototypes" className="case-hero-image" style={{ width: '100%', height: 'auto' }} />
+              </div>
+              <div className="section-content">
+                <h3 style={{marginTop: 0}}>Low Fidelity Prototypes</h3>
+                <p><strong>Design Principles:</strong> Transparency over opacity, glanceability first with progressive disclosure, control without cognitive load, time as first-class dimension.</p>
+                <p><strong>Sketches & Wireframes:</strong> Started with 20+ rapid sketches exploring mental model options: timeline-based, graph-based, and hybrid approaches. Tested spatial layouts vs. text-heavy interfaces. Early prototypes showed that teams preferred directed graphs (like Git commit graphs) for understanding agent relationships.</p>
+                <p><strong>User Flows & Iteration:</strong> Built three major iterations addressing: (1) Visual stability—dynamic graphs caused cognitive load; solution: fixed positions with animation. (2) JSON data representation—raw JSON overwhelming; solution: smart previews with expandable details. (3) Large dataset performance—10,000+ events caused lag; solution: virtualized timeline with sampling. (4) Approval workflow friction—modal approvals too slow; solution: in-place conditional logic.</p>
+                <p><strong>Key Design Decision:</strong> Adopted Timeline Scrubber as central metaphor (like video scrubbing). This single interaction model unified debugging, analysis, and forecasting—users could "rewind" workflows and inspect any moment in time. This replaced 15+ separate debugging screens in initial concepts.</p>
               </div>
             </div>
           </motion.section>

@@ -338,7 +338,7 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
             </div>
           </motion.section>
 
-          {/* Solution Section */}
+          {/* Solution Section 
           <motion.section variants={itemVariants} className="case-section solution-section">
             <span className="section-number">06 — SOLUTION</span>
             <h2>The Solution</h2>
@@ -349,7 +349,7 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
               <img src={`${import.meta.env.BASE_URL}medimate/solution1.png`} alt="Solution 1" className="case-image" />
               <img src={`${import.meta.env.BASE_URL}medimate/solution2.png`} alt="Solution 2" className="case-image" />
             </div>
-          </motion.section>
+          </motion.section>*/}
 
           {/* Final Designs */}
           <motion.section variants={itemVariants} className="case-section final-designs-section">
