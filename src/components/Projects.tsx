@@ -15,7 +15,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'AGENTFLOW',
+    title: 'AgentFlow',
     description:
       'AI-powered dashboard for managing and monitoring autonomous agents, providing real-time insights and control over agent workflows.',
     category: 'Web Application',

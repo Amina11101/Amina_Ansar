@@ -23,7 +23,7 @@ export default function CaseStudyShepherdGrain({ isRecruiterMode }: CaseStudyShe
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mode-badge">⚡ 30-Second Scan</div>
+          <div className="mode-badge">30-Second Scan</div>
 
           <motion.div variants={itemVariants} className="quick-overview">
             <h2>Shepherd Grain</h2>
@@ -65,14 +65,14 @@ export default function CaseStudyShepherdGrain({ isRecruiterMode }: CaseStudyShe
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mode-badge">📖 Full Case Study</div>
+          <div className="mode-badge">Full Case Study</div>
 
           {/* Hero Section */}
           <motion.section variants={itemVariants} className="case-hero">
             <div className="hero-content">
               <h1>Shepherd Grain</h1>
               <p className="hero-category">Mobile & Tablet App</p>
-              <p className="hero-description">A mobile and tablet CRM application designed to streamline grain trading operations for agricultural professionals.</p>
+              <p className="hero-description">Shepherd Grain is an internal mobile and tablet application designed for an Australian grain trading company to help warehouse teams manage container operations.</p>
             </div>
           </motion.section>
 
@@ -89,7 +89,7 @@ export default function CaseStudyShepherdGrain({ isRecruiterMode }: CaseStudyShe
           <motion.section variants={itemVariants} className="case-section stats-section">
             <span className="section-number">01 — PROJECT OVERVIEW</span>
             <h2>Project Overview</h2>
-            <p className="overview-description">A logistics management platform designed to help warehouse teams track container arrivals, inspections, and loading operations efficiently. The application enables staff to monitor daily operations through a centralized dashboard while providing tools for scanning containers, recording shipment details, and managing inspections.</p>
+            <p className="overview-description">The app allows staff to track arrivals, record inspections, and monitor shipments in one place, reducing manual tracking and improving operational visibility.</p>
             <div className="overview-grid">
                <div className="overview-card">
                 <span className="overview-label">Role</span>
@@ -97,11 +97,11 @@ export default function CaseStudyShepherdGrain({ isRecruiterMode }: CaseStudyShe
               </div>
               <div className="overview-card">
                 <span className="overview-label">Project Type</span>
-                <p className="overview-value">Freelance Mobile App</p>
+                <p className="overview-value">Internal Operations Tool</p>
               </div>
               <div className="overview-card">
-                <span className="overview-label">Duration</span>
-                <p className="overview-value">4 months</p>
+                <span className="overview-label">Client</span>
+                <p className="overview-value">Shepherd Grain (Australia)</p>
               </div>
             </div>
           </motion.section>
@@ -112,41 +112,149 @@ export default function CaseStudyShepherdGrain({ isRecruiterMode }: CaseStudyShe
               <span className="problem-number">02 — CHALLENGE</span>
               <h2>The Grain Trading Problem</h2>
             </div>
-            <div className="problem-impact">
-              <p>Warehouse staff needed a faster and more reliable way to manage daily grain container operations. Existing processes relied heavily on manual tracking and fragmented systems, making it difficult to monitor arrivals, inspections, and shipments efficiently.</p>
+            <div style={{display: 'flex', gap: '2rem', alignItems: 'center'}}>
+              <div style={{flex: 1}}>
+                <div className="problem-impact">
+                  <p>Warehouse teams were managing grain container operations using manual logs and disconnected systems.</p>
+                  <p>This made it difficult to:</p>
+                  <ul style={{marginLeft: '1.5rem', lineHeight: '1.8'}}>
+                    <li>Track container arrivals</li>
+                    <li>Record inspection data quickly</li>
+                    <li>Monitor shipment status in real time</li>
+                    <li>Access operational information on the go</li>
+                  </ul>
+                  <p>These challenges slowed down operations and increased the risk of data entry errors.</p>
+                </div>
               </div>
+             
+            </div>
           </motion.section>
 
           {/* Solution Section */}
-          <motion.section variants={itemVariants} className="case-section solution-section">
-            <span className="section-number">03 — SOLUTION</span>
+          <motion.section variants={itemVariants} className="case-section">
+            <span className="section-number"></span>
+            <h2>My Role</h2>
 
             <div className="section-content">
-              <p>Designed and developed a comprehensive mobile CRM application that consolidates client data, transaction history, inventory tracking, and real-time pricing information. The app features offline functionality to support field operations with unreliable connectivity, automatic syncing, intelligent data caching, and an intuitive interface optimized for quick information access and transaction processing.</p>
+              <p>As the Product Designer, I worked on:</p>
+              <div className="overview-grid" style={{marginTop: '1.5rem', gridTemplateColumns: 'repeat(4, 1fr)'}}>
+                <div className="overview-card">
+                  <p style={{margin: '0', lineHeight: '1.6'}}>Conducting user research to understand the needs and pain points of warehouse teams.</p>
+                </div>
+                <div className="overview-card">
+                  <p style={{margin: '0', lineHeight: '1.6'}}>Designing wireframes and prototypes for the mobile and Tablet app.</p>
+                </div>
+                <div className="overview-card">
+                  <p style={{margin: '0', lineHeight: '1.6'}}>Creating a user-friendly interface that streamlines container tracking and inspection processes.</p>
+                </div>
+                <div className="overview-card">
+                  <p style={{margin: '0', lineHeight: '1.6'}}>Collaborating with developers to ensure design implementation aligns with technical constraints.</p>
+                </div>
+              </div>
             </div>
           </motion.section>
 
           {/* Impact Section */}
           <motion.section variants={itemVariants} className="case-section impact-learnings-section">
-            <span className="section-number">04 — IMPACT</span>
-            <h2>Impact & Results</h2>
-            <div className="impact-content">
-              <p className="impact-highlight">Enabled traders to manage operations more efficiently, reduce data entry errors by 80%, improve client relationships through better communication tracking, and make faster business decisions from the field. The app increased operational efficiency and reduced time spent on administrative tasks.</p>
+            <span className="section-number">04 — DESIGN APPROACH</span>
+            <h2>Design Approach</h2>
+            <div style={{display: 'flex', gap: '2rem', alignItems: 'flex-start'}}>
+              <div className="impact-content" style={{flex: 1}}>
+                <p className="impact-highlight">The design focused on speed, clarity, and field usability.</p>
+                <p style={{marginTop: '1.5rem'}}><strong>Key design priorities:</strong></p>
+                <ul style={{marginLeft: '1.5rem', lineHeight: '1.8'}}>
+                  <li>Quick access to daily container updates</li>
+                  <li>Large touch-friendly controls for warehouse environments</li>
+                  <li>Clear inspection and shipment records</li>
+                  <li>Mobile-first layout for on-site staff</li>
+                </ul>
+              </div>
+              <div style={{flex: 1}}>
+                <img 
+                  src={`${import.meta.env.BASE_URL}Shepherd Grain/paper prototype.png`}
+                  alt="Paper Prototype"
+                  style={{width: '100%', borderRadius: '20px', border: '1px solid rgba(58, 15, 15, 0.2)'}}
+                />
+              </div>
+            </div>
+            
+          </motion.section>
+
+          {/* Key Features Section */}
+          <motion.section variants={itemVariants} className="case-section research-section">
+            <span className="section-number">05 — Key Features</span>
+            <h2>Key Features</h2>
+            <div className="section-content">
+              <div className="features-list" style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem'}}>
+                <div className="feature-item" style={{padding: '1rem'}}>
+                  <h3 style={{fontSize: '1rem', marginBottom: '0.5rem'}}>Container Tracking</h3>
+                  <p style={{fontSize: '0.875rem'}}>Staff can monitor incoming containers and update their status.</p>
+                </div>
+                <div className="feature-item" style={{padding: '1rem'}}>
+                  <h3 style={{fontSize: '1rem', marginBottom: '0.5rem'}}>Inspection Logging</h3>
+                  <p style={{fontSize: '0.875rem'}}>Teams can quickly record inspection results directly from the field.</p>
+                </div>
+                <div className="feature-item" style={{padding: '1rem'}}>
+                  <h3 style={{fontSize: '1rem', marginBottom: '0.5rem'}}>Shipment Monitoring</h3>
+                  <p style={{fontSize: '0.875rem'}}>Managers can view shipment progress and operational updates in real time.</p>
+                </div>
+                <div className="feature-item" style={{padding: '1rem'}}>
+                  <h3 style={{fontSize: '1rem', marginBottom: '0.5rem'}}>Offline Support</h3>
+                  <p style={{fontSize: '0.875rem'}}>The app allows teams to record data even when internet connectivity is unstable.</p>
+                </div>
+              </div>
             </div>
           </motion.section>
 
-          {/* Process Section */}
-          <motion.section variants={itemVariants} className="case-section research-section">
-            <span className="section-number">05 — PROCESS</span>
-            <h2>Design & Development Process</h2>
-            <div className="section-content">
-              <p>Conducted field research with grain traders to understand their workflows and pain points. Designed wireframes and prototypes through iterative feedback sessions. Developed the mobile app using React Native for cross-platform compatibility with offline-first architecture. Implemented Firebase for real-time data sync and built a Node.js backend for transaction processing and reporting.</p>
+          {/* Design Section */}
+          <motion.section variants={itemVariants} className="case-section design-showcase-section">
+            <span className="section-number">06 — DESIGN HIGHLIGHTS</span>
+            <h2>Final Design</h2>
+            
+            <p>
+              The interface was optimized differently for mobile and tablet devices.
+            </p>
+
+            <div className="photo-section">
+              <img 
+                src={`${import.meta.env.BASE_URL}Shepherd Grain/finaldesign.png`}
+                alt="Final Design"
+                style={{width: '90%', borderRadius: '8px'}}
+                className="case-hero-image"
+              />
             </div>
           </motion.section>
 
           {/* Outcome Section */}
           <motion.section variants={itemVariants} className="case-section">
-            <span className="section-number">06 — OUTCOME</span>
+            <span className="section-number">07 — Outcome</span>
+            <h2>Outcome</h2>
+            <div className="section-content">
+              <p>The application helped streamline warehouse operations by providing a centralized system for container tracking and inspection logging.</p>
+              <p style={{marginTop: '1rem'}}>The project highlighted the importance of designing mobile tools for real-world operational environments, especially where internet connectivity may be limited.</p>
+            </div>
+          </motion.section>
+
+          {/* Key Takeaways & Future Learning Section */}
+          <motion.section variants={itemVariants} className="case-section">
+            <span className="section-number">08 — KEY TAKEAWAYS & FUTURE LEARNING</span>
+            <h2>Key Takeaways & Future Learning</h2>
+            <div className="section-content">
+              <p><strong>Key Takeaways:</strong> The importance of designing for offline-first functionality in field-based applications. Understanding real-world operational constraints is critical to creating effective solutions. Mobile-first design with touch-friendly interfaces significantly improves usability in warehouse environments.</p>
+              <p style={{marginTop: '1rem'}}><strong>Future Learning:</strong> Continuing to refine real-time synchronization patterns for complex data structures. Exploring advanced analytics to provide warehouses with predictive insights about container arrivals and optimal inventory levels. Expanding the app's capabilities with AI-powered inspection result analysis.</p>
+            </div>
+          </motion.section>
+
+          {/* Process Section */}
+          <motion.section variants={itemVariants} className="case-section">
+            <span className="section-number">09 — PROCESS</span>
+            <h2>Design & Development Process</h2>
+            <div className="section-content">
+              <p>Conducted field research with grain traders to understand their workflows and pain points. Designed wireframes and prototypes through iterative feedback sessions. Developed the mobile app using React Native for cross-platform compatibility with offline-first architecture. Implemented Firebase for real-time data sync and built a Node.js backend for transaction processing and reporting.</p>
+            </div>
+          </motion.section>
+          <motion.section variants={itemVariants} className="case-section">
+            <span className="section-number">10 — KEY TAKEAWAYS</span>
             <h2>Key Takeaways</h2>
             <div className="section-content">
               <p>Successfully delivered a production-ready mobile CRM that transformed how grain traders manage their business. The app demonstrated the critical importance of offline-first design for field-based operations and real-time data synchronization in the agricultural industry.</p>
@@ -155,7 +263,7 @@ export default function CaseStudyShepherdGrain({ isRecruiterMode }: CaseStudyShe
 
           {/* Tools Section */}
           <motion.section variants={itemVariants} className="case-section design-system-section">
-            <span className="section-number">07 — TOOLS</span>
+            <span className="section-number">11 — TOOLS</span>
             <h2>Tools & Technologies</h2>
             <div className="tools-showcase">
               {['React Native', 'TypeScript', 'Firebase', 'Redux', 'Figma', 'Node.js'].map((tool, index) => (
@@ -166,59 +274,9 @@ export default function CaseStudyShepherdGrain({ isRecruiterMode }: CaseStudyShe
             </div>
           </motion.section>
 
-          {/* Design Section */}
-          <motion.section variants={itemVariants} className="case-section design-showcase-section">
-            <span className="section-number">08 — DESIGN</span>
-            <h2>Design Showcase</h2>
-            
-            <p className="design-intro-paragraph">
-              The mobile and tablet interfaces were designed with distinctly different approaches to optimize the user experience for each device type. Mobile designs prioritize essential information and single-handed navigation with touch-friendly elements, while tablet designs leverage the larger landscape format to display comprehensive data and dashboard-style information. This dual-design strategy ensures traders can quickly check critical updates on mobile while performing detailed analysis and transaction management on tablets.
-            </p>
-
-            {/* Mobile Designs */}
-            <div className="design-category">
-              <h3>Mobile Interface</h3>
-              <div className="design-gallery mobile-gallery">
-                {['mobile1', 'mobile2', 'mobile3', 'mobile4', 'mobile5', 'mobile6', 'mobile7', 'mobile8'].map((image, index) => (
-                  <motion.div 
-                    key={index} 
-                    variants={itemVariants}
-                    className="design-image-wrapper"
-                  >
-                    <img 
-                      src={`${import.meta.env.BASE_URL}Shepherd Grain/${image}.png`}
-                      alt={`Mobile Design ${index + 1}`}
-                      className="design-image"
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            {/* Tablet Designs */}
-            <div className="design-category">
-              <h3>Tablet Interface</h3>
-              <div className="design-gallery tablet-gallery">
-                {['tablet1', 'tablet2', 'tablet3', 'tablet4', 'tablet5'].map((image, index) => (
-                  <motion.div 
-                    key={index} 
-                    variants={itemVariants}
-                    className="design-image-wrapper"
-                  >
-                    <img 
-                      src={`${import.meta.env.BASE_URL}Shepherd Grain/${image}.png`}
-                      alt={`Tablet Design ${index + 1}`}
-                      className="design-image"
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.section>
-
           {/* Live App Section */}
           <motion.section variants={itemVariants} className="case-section live-app-section">
-            <span className="section-number">09 — LIVE APP</span>
+            <span className="section-number">12 — LIVE APP</span>
             <h2>Experience It Yourself</h2>
             <p className="live-app-description">Want to see how Shepherd Grain works in action? Download the app from the Google Play Store.</p>
             <a 

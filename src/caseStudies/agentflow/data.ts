@@ -1,7 +1,7 @@
 import { CaseStudyData } from '../types'
 
 export const agentflowData: CaseStudyData = {
-  title: 'AGENTFLOW',
+  title: 'AgentFlow',
   category: 'Web Application',
   image: '/agentflow/hero.png',
   description:

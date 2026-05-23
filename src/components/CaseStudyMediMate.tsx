@@ -460,22 +460,22 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
             <div className="impact-subsection">
               <h3>Impact & Results</h3>
               <div className="impact-content">
-                <p className="impact-highlight">Medimate enables non-German speakers to independently manage their health, improve doctor-patient communication, reduce medication errors, and access timely care without dependency on translators or friends.</p>
+               
                 <div className="impact-cards">
                   <div className="impact-card">
-                    <h4>✨ Design Validation</h4>
+                    <h4>Design Validation</h4>
                     <p>8/8 test participants successfully completed core tasks with high ease ratings (8.5-9.2/10). The bilingual interface reduced cognitive load and significantly improved confidence in healthcare management.</p>
                   </div>
                   <div className="impact-card">
-                    <h4>🎯 User Accessibility</h4>
+                    <h4>User Accessibility</h4>
                     <p>Demonstrated that language-inclusive design directly addresses healthcare equity gaps. International residents finally have a tool that respects their linguistic needs without compromising medical accuracy.</p>
                   </div>
                   <div className="impact-card">
-                    <h4>💡 Business Potential</h4>
+                    <h4>Business Potential</h4>
                     <p>The concept addresses a 13.4M+ person market in Germany alone. This design pattern could be replicated for other languages and demographics facing similar healthcare barriers globally.</p>
                   </div>
                   <div className="impact-card">
-                    <h4>📊 Measurable Improvements</h4>
+                    <h4>Measurable Improvements</h4>
                     <p>100% medication logging completion rate, 87.5% doctor booking success, zero critical errors in core workflows. These metrics validate the effectiveness of user-centered healthcare design.</p>
                   </div>
                 </div>

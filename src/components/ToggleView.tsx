@@ -19,14 +19,14 @@ export default function ToggleView({ isRecruiterMode, onToggle }: ToggleViewProp
           className={`toggle-button ${isRecruiterMode ? 'active' : ''}`}
           onClick={() => onToggle(true)}
         >
-          <span className="toggle-icon">⚡</span>
+          <span className="toggle-icon"></span>
           Recruiter Mode (30s)
         </button>
         <button
           className={`toggle-button ${!isRecruiterMode ? 'active' : ''}`}
           onClick={() => onToggle(false)}
         >
-          <span className="toggle-icon">📖</span>
+          <span className="toggle-icon"></span>
           Full Case Study
         </button>
       </div>
