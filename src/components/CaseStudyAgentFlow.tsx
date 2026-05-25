@@ -113,7 +113,7 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
               <h2>The Challenge: The Agent Debugging Crisis</h2>
             </div>
             <div className="problem-impact">
-              <p><strong>What was wrong:</strong> Organizations deploying multi-agent AI systems had zero visibility into how agents collaborate. Teams operated "in complete darkness"—unable to see data flows, understand agent decisions, or debug failures when agent-to-agent handoffs broke.</p>
+              <p><strong>What was wrong:</strong> Organizations deploying multi-agent AI systems had zero visibility into how agents collaborate. Teams were unable to see data flows, understand agent decisions, or debug failures when agent-to-agent handoffs broke.</p>
               <p><strong>Who was affected:</strong> Operations teams and AI product leads at companies with 50+ AI agents in production. For every 1 production agent, teams spent 30-60 minutes debugging log files manually instead of focusing on optimization.</p>
               <p><strong>Why it mattered:</strong> 88% of organizations embed AI agents, but only 11% have them in production. The lack of visual debugging tools created a critical bottleneck.</p>
             </div>
@@ -124,10 +124,10 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
             <span className="section-number">03 — YOUR ROLE & RESPONSIBILITY</span>
             <h2>My Role as Lead Designer</h2>
             <div className="section-content">
-              <p><strong>UX Research:</strong> I conducted 12 in-depth interviews with operations managers and AI product leads, shadowed 4 teams debugging production failures in real-time, and analyzed their pain points with existing tools.</p>
-              <p><strong>UX Strategy:</strong> I synthesized research into 4 core user insights and defined the information architecture around temporal navigation and spatial mental models—concepts unfamiliar to existing debugging tools.</p>
+              <p><strong>UX Research:</strong> I conducted 12 in-depth interviews with operations managers and AI product leads, found 4 teams debugging production failures in real-time, and analyzed their pain points with existing tools.</p>
+              <p><strong>UX Strategy:</strong> I synthesized research into 4 core user insights and defined the information architecture around existing debugging tools.</p>
               <p><strong>UI Design:</strong> I designed features using minimalist principles inspired by developer tools, with emphasis on glanceability and progressive disclosure.</p>
-              <p><strong>Prototyping & Testing:</strong> I built high-fidelity interactive prototypes in Figma using Google Stich, conducted iterative usability testing, and refined interactions based on feedback. Solo design ownership from concept through production-ready prototype.</p>
+              <p><strong>Prototyping & Testing:</strong> I built high-fidelity interactive prototypes in Figma using Google Stich, conducted iterative usability testing, and refined interactions based on feedback.</p>
             </div>
           </motion.section>
 
@@ -137,11 +137,11 @@ export default function CaseStudyAgentFlow({ isRecruiterMode }: CaseStudyAgentFl
             <h2>Deep Research & Key Findings</h2>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'start' }}>
               <div className="section-content">
-                <p><strong>Research Methods:</strong> 12 in-depth interviews, 4 on-site job shadowing sessions, competitive analysis of Langchain/Datadog/New Relic, and literature review of multi-agent coordination academic research.</p>
-                <p><strong>Critical Insight #1 — Mental Model Mismatch:</strong> Teams think in workflows and data transformations, but existing tools force log-based, text-heavy debugging. Users struggled to reconstruct agent behavior from unordered log entries.</p>
-                <p><strong>Critical Insight #2 — "Ghost in the Machine":</strong> Teams couldn't understand WHY agents made specific decisions. 78% of debugging sessions involved guessing which agent caused the failure by reading decision rationales.</p>
-                <p><strong>Critical Insight #3 — Time-Driven Failures:</strong> 80% of production failures occurred during agent-to-agent handoffs. Teams needed temporal navigation—the ability to "pause" a workflow and inspect state at exact moments.</p>
-                <p><strong>Critical Insight #4 — Trust Calibration is Personal:</strong> Teams don't use universal confidence thresholds. Instead, they vary thresholds per workflow (stricter for financial decisions, looser for recommendations).</p>
+                <p><strong>Research Methods:</strong> 12 in-depth interviews, competitive analysis of Langchain & Datadog, and literature review of multi-agent coordination academic research.</p>
+                <p><strong>Mental Model Mismatch:</strong> Teams think in workflows and data transformations, but existing tools force log-based, text-heavy debugging. Users struggled to reconstruct agent behavior from unordered log entries.</p>
+                <p><strong>Ghost in the Machine:</strong> Teams couldn't understand WHY agents made specific decisions. 78% of debugging sessions involved guessing which agent caused the failure by reading decision rationales.</p>
+                <p><strong>Time-Driven Failures:</strong> 80% of production failures occurred during agent-to-agent handoffs. Teams needed temporal navigation—the ability to "pause" a workflow and inspect state at exact moments.</p>
+                <p><strong>Trust Calibration is Personal:</strong> Teams don't use universal confidence thresholds. Instead, they vary thresholds per workflow (stricter for financial decisions, looser for recommendations).</p>
               </div>
               <div className="photo-section" style={{ 
                 display: 'flex', 
