@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { useRef, useState } from 'react'
 import './CaseStudy.css'
 import { containerVariants, itemVariants } from '../utils/caseStudyAnimations'
 
@@ -8,20 +7,6 @@ interface CaseStudyMediMateProps {
 }
 
 export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMateProps) {
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const [isPlaying, setIsPlaying] = useState(false)
-
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play()
-        setIsPlaying(true)
-      } else {
-        videoRef.current.pause()
-        setIsPlaying(false)
-      }
-    }
-  }
 
   return (
     <motion.div

@@ -1,4 +1,4 @@
-import { CaseStudyData } from '../types'
+import type { CaseStudyData } from '../types'
 
 export const agentflowData: CaseStudyData = {
   title: 'AgentFlow',
