@@ -97,7 +97,7 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
             <img src={`${import.meta.env.BASE_URL}medimate/hero.png`} alt="Project Hero" className="case-image" />
           </motion.section>
 
-          {/* Overview Stats */}
+          {/* Overview Stats 
           <motion.section variants={itemVariants} className="case-section stats-section">
             <span className="section-number">01 — PROJECT OVERVIEW</span>
             <h2>Project Overview</h2>
@@ -116,12 +116,12 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
                 <p className="overview-value">Concept / Personal Project</p>
               </div>
             </div>
-          </motion.section>
+          </motion.section>*/}
 
           {/* Problem Statement */}
           <motion.section variants={itemVariants} className="case-section problem-section">
             <div className="problem-header">
-              <span className="problem-number">02 — PROBLEM</span>
+              <span className="problem-number">01 — PROBLEM</span>
               <h2>The Healthcare Language Barrier Crisis</h2>
               <p className="problem-intro">Germany is home to millions of international residents, students, and workers. Yet the vast majority of healthcare platforms, pharmacy systems, and medical apps operate exclusively in German, creating systematic barriers that directly impact health outcomes.</p>
             </div>
@@ -140,13 +140,6 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
                 <p className="stat-label">International students & workers with limited German proficiency</p>
               </div>
             </div>
-
-            <div className="problem-impact">
-              <h3>The Real-World Impact</h3>
-              <div className="impact-card">
-                <p>Language barriers don't just create inconvenience, they create genuine health risks. When medication instructions are only in German, people guess dosages. When appointment booking requires phone calls in German, people delay seeking care. When symptom tracking tools are inaccessible, doctors miss critical diagnostic information. This isn't a usability problem; it's a healthcare equity problem.</p>
-              </div>
-            </div>
           </motion.section>
 
           {/* Problem Image 
@@ -156,7 +149,7 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
 
           {/* Research Section */}
           <motion.section variants={itemVariants} className="case-section research-section">
-            <span className="section-number">03 — RESEARCH</span>
+            <span className="section-number">02 — RESEARCH</span>
             <h2>Understanding User Needs</h2>
 
             {/* Research Methods */}
@@ -179,6 +172,18 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
                   <p>Created detailed user journeys to identify critical pain points in the healthcare process</p>
                 </div>
               </div>
+            </div>
+
+            {/* Interview Guide *
+            <div className="research-subsection">
+              <h3>Interview Guide</h3>
+              <p>Add interview guide details here - key questions, methodology, participant screening criteria</p>
+            </div>
+
+            {/* Research Findings 
+            <div className="research-subsection">
+              <h3>Research Findings</h3>
+              <p>Add detailed research findings here - patterns, statistics, qualitative insights from interviews and competitive analysis</p>
             </div>
 
             {/* Personas */}
@@ -210,7 +215,7 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
               </div>
             </div>
 
-            {/* User Journey */}
+            {/* User Journey 
             <div className="research-subsection">
               <h3>User Journey: Priya's Story</h3>
               <p className="journey-intro">A 26-year-old international master's student experiencing recurring stomach pain wanted to track symptoms before a doctor visit.</p>
@@ -241,29 +246,17 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
                   <p>Manual pharmacy visits required for refills</p>
                 </div>
               </div>
-            </div>
+            </div>*/}
 
             {/* Key Insights */}
             <div className="research-subsection">
               <h3>Key Insights</h3>
-              <div className="insights-grid">
-                <div className="insight-card">
-                  <h4>Language = Safety</h4>
-                  <p>9 of 12 participants reported missing medication doses due to German-only instructions, resorting to dangerous Google Translate interpretations</p>
-                </div>
-                <div className="insight-card">
-                  <h4>Call Anxiety</h4>
-                  <p>All participants struggled with calling doctors' offices in German, sometimes delaying care for weeks</p>
-                </div>
-                <div className="insight-card">
-                  <h4>Information Fragmentation</h4>
-                  <p>Users juggle notes apps, pharmacy websites, separate booking platforms creating chaotic health management</p>
-                </div>
-                <div className="insight-card">
-                  <h4>Trust in Documentation</h4>
-                  <p>Clear, organized health records in user's language significantly enhances confidence during doctor appointments</p>
-                </div>
-              </div>
+              <ul className="insights-list">
+                <li><strong>Language = Safety</strong> — 9 of 12 participants reported missing medication doses due to German-only instructions, resorting to dangerous Google Translate interpretations</li>
+                <li><strong>Call Anxiety</strong> — All participants struggled with calling doctors' offices in German, sometimes delaying care for weeks</li>
+                <li><strong>Information Fragmentation</strong> — Users juggle notes apps, pharmacy websites, separate booking platforms creating chaotic health management</li>
+                <li><strong>Trust in Documentation</strong> — Clear, organized health records in user's language significantly enhances confidence during doctor appointments</li>
+              </ul>
             </div>
           </motion.section>
 
@@ -272,19 +265,25 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
             <span className="section-number">04 — DESIGN PROCESS</span>
             <h2>Wireframes & Iterations</h2>
             <p className="section-intro">From initial sketches to refined flows, every iteration was informed by user feedback.</p>
-            <div className="iteration-content">
-              <div className="iteration-step">
+            
+            <div className="iteration-pair">
+              <div className="iteration-text">
                 <h3>Low-Fidelity Wireframes</h3>
                 <p>Created 30+ wireframe screens exploring layout options and navigation patterns. Tested early wireframes with 5 international users for structure validation.</p>
               </div>
-              <div className="iteration-step">
+              <div className="image-bg-wrapper">
+                <img src={`${import.meta.env.BASE_URL}medimate/low-fi%20prototype.jpeg`} alt="Wireframe Sketches" className="case-image" />
+              </div>
+            </div>
+            
+            <div className="iteration-pair">
+              <div className="image-bg-wrapper">
+                <img src={`${import.meta.env.BASE_URL}medimate/information%20architecture.png`} alt="Information Architecture" className="case-image" />
+              </div>
+              <div className="iteration-text">
                 <h3>Key Iteration Insights</h3>
                 <p>Initially placed medication tracking in a separate tab, but user feedback revealed users wanted direct home screen access. Redesigned information architecture to feature medication dashboard prominently on home view.</p>
               </div>
-            </div>
-            <div className="photo-grid">
-              <img src={`${import.meta.env.BASE_URL}medimate/low-fi%20prototype.jpeg`} alt="Wireframe Sketches" className="case-image" />
-              <img src={`${import.meta.env.BASE_URL}medimate/information%20architecture.png`} alt="Information Architecture" className="case-image" />
             </div>
           </motion.section>
 
@@ -298,20 +297,23 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
             <p className="section-intro">A cohesive, accessible design system built for healthcare trust and clarity.</p>
             
             <motion.section variants={itemVariants} className="case-section photo-section">
-              <img src={`${import.meta.env.BASE_URL}medimate/Typography.png`} alt="Typography System" className="case-image" />
+              <div className="image-bg-wrapper">
+                <img src={`${import.meta.env.BASE_URL}medimate/Typography.png`} alt="Typography System" className="case-image" />
+              </div>
             </motion.section>
             
             <div className="design-system-subsection">
              <h2>Logo Design</h2>
-            <img src={`${import.meta.env.BASE_URL}medimate/logo.png`} alt="Typography System" className="case-image" />
-
+             <div className="image-bg-wrapper logo-image-wrapper">
+              <img src={`${import.meta.env.BASE_URL}medimate/logo.png`} alt="Typography System" className="case-image" />
+             </div>
             </div>
 
             <div className="design-system-subsection">
               
             </div>
-
-            <div className="design-system-subsection">
+ </motion.section>
+             {/*<div className="design-system-subsection">
               <h3>Accessibility Standards</h3>
               <div className="accessibility-checklist">
                 <div className="check-item">✓ WCAG AA compliance for all text (4.5:1 contrast for normal text)</div>
@@ -321,9 +323,9 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
                 <div className="check-item">✓ Clear visual hierarchy for stress-free navigation</div>
               </div>
             </div>
-          </motion.section>
+         
 
-          {/* Solution Section 
+          Solution Section 
           <motion.section variants={itemVariants} className="case-section solution-section">
             <span className="section-number">06 — SOLUTION</span>
             <h2>The Solution</h2>
@@ -346,7 +348,7 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
             </div>
           </motion.section>
 
-          {/* Usability Testing */}
+          {/* Usability Testing 
           <motion.section variants={itemVariants} className="case-section usability-testing-section">
             <span className="section-number">08 — USABILITY TESTING</span>
             <h2>Testing & Validation</h2>
@@ -435,11 +437,11 @@ export default function CaseStudyMediMate({ isRecruiterMode }: CaseStudyMediMate
                 <li><strong>Contextual help needed:</strong> Added tooltips explaining medical terminology in user's selected language</li>
               </ul>
             </div>
-          </motion.section>
+          </motion.section>*/}
 
           {/* Impact & Learnings */}
           <motion.section variants={itemVariants} className="case-section impact-learnings-section">
-            <span className="section-number">09 — IMPACT & LEARNINGS</span>
+            <span className="section-number">08 — IMPACT & LEARNINGS</span>
             <h2>Results & Key Takeaways</h2>
             
             <div className="impact-subsection">
